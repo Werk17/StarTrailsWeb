@@ -93,22 +93,55 @@
 									gathered from our end users as described in the Early Design section of this site,
 									we then set out to define, categorize and prioritize the requirments for our system.
 									The following tables highlights the highest priority functional requirements, data
-									requirements, software and hardware requirements. Note that 1 represents the highest
-									priority and 5 represents the lowest priority.</p>
+									requirements, software and hardware requirements. Note that 1 represents the lowest
+									priority and 5 represents the highest priority.</p>
 								<br>
 
 								<table>
 									<caption style="color: darkblue; font-size: 20px;"> Functional Requirements
+										(Highest Priority)
 									</caption>
 									<tr>
+										<th>ID</th>
 										<th>Category</th>
-										<th>Description</th>
+										<th>Description (users should be able to..)</th>
 										<th>Priority</th>
 									</tr>
 									<tr>
-										<td>Leaderboard</td>
-										<td>Users should be able to view a leaderboard.</td>
-										<td>1</td>
+										<td>UF.P.1</td>
+										<td>Profile</td>
+										<td>create an account with their personal information </td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>UF.P.1</td>
+										<td>Profile</td>
+										<td>Login securely with username and password</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>UF.D.1</td>
+										<td>Discovery</td>
+										<td>View a list of stargazing sites with detailed descriptions and images</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>UF.C.1</td>
+										<td>User-Generated Content</td>
+										<td>Leave a review for each site they have visited</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>UF.M.1</td>
+										<td>Map</td>
+										<td>View stargazing sites on an interactive map (instead of list view)</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>UF.D.8</td>
+										<td>Discovery</td>
+										<td>View light pollution levels of different sites</td>
+										<td>5</td>
 									</tr>
 
 								</table>
@@ -117,26 +150,123 @@
 								<table>
 									<caption style="color: darkblue; font-size: 20px;"> Data Requirements</caption>
 									<tr>
+										<th>ID</th>
 										<th>Category</th>
 										<th>Description</th>
 										<th>Priority</th>
 									</tr>
 									<tr>
+										<td>UF.F.1 & UF.F.2</td>
+										<td>Positional</td>
+										<td>user position, site position, collection radius</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											UF.D.4
+											UF.D.10
+											UF.D.11
+										</td>
+										<td>Amenity</td>
+										<td>
+											availability, ratings/reviews, category
+											(ie. food, camping, gas)
+										</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											UF.P.1 & UF.P.2
+											UF.F.3
+											UF.P.5
+										</td>
 										<td>Profile</td>
-										<td>User name and password.</td>
-										<td>1</td>
+										<td>Username, Password, reviews, visited sites, favorite sites</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											UF.M.2
+											UF.D.8
+											UF.M.1
+										</td>
+										<td>Map</td>
+										<td>Map of Montana: Sites, Roads, Light pollution map, night sky map</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											UF.D.9
+											UF.D.12
+											UF.D.2
+											UF.D.4
+										</td>
+										<td>Site</td>
+										<td>Amenities, ratings/reviews, user generated sites, wildlife warnings,
+											equipment recommendations</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											AD.1 & AD.2
+											UF.D.2
+											UF.C.2
+										</td>
+										<td>Review</td>
+										<td>ratings associated with each site/amenity, additional written review, photos
+										</td>
+										<td>5</td>
+									</tr>
+									<tr>
+										<td>
+											UF.D.7
+											UF.D.8
+											UF.D.3
+											UF.D.14
+											UF.D.15
+										</td>
+										<td>Phenomena</td>
+										<td>Events, Weather, Smoke, Moon phase, available constellations</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>UF.D.10</td>
+										<td>Local Amenities </td>
+										<td>Restaurants, Gas Stations, Grocery Stores, Avg. Pricings, Reviews, Distance
+										</td>
+										<td>4</td>
+									</tr>
+									<tr>
+										<td>UF.D.13 & UF.P.4</td>
+										<td>Organizational</td>
+										<td>Itinerary, Log books</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>UF.D.6</td>
+										<td>Extras</td>
+										<td>Native American lore involved with site/constellation</td>
+										<td>2</td>
 									</tr>
 
 								</table>
 								<br>
 								<p>
 								<h3 style="color: darkblue; font-size: 20px;">Hardware and Software requirements</h3>
-								We also indentied the following initial hardware and software requirements for our
-								system:
+								In terms of hardware requirements, we don't have a lot to worry about besides the
+								physical device for the app. All of our requirements can be met using online API calls
+								and a cross-platform mobile application framework. Due to the even spread of Android and
+								IOS users as indicated from our user feedback, our project will need to be developed on
+								software compatible with both Android and Apple operating systems. Which bring us into
+								the software requirements, which as stated before, we will be using a cross-platform
+								mobile application framework called React Native. This allows us to write code using
+								JavaScript, which we are all familiar with, and can deploy to both IOS and Android
+								devices.
 								<ul>
-									<li> Req 1 </li>
-									<li> Req 2 </li>
-									<li> Req 3 </li>
+									<li>Hardware: Android, iPhone, Tablet </li>
+									<li>Development: React Native, Flask (alternative)</li>
+									<li>Database/Storage: MongoDB, PouchDB, SQLite, MySQL</li>
+									<li>Others: REST API, Open-Sourced Data</li>
 								</ul>
 								</p>
 
