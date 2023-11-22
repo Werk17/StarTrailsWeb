@@ -72,32 +72,43 @@
 							<h1>Systems Modeling</h1>
 
 							<div class="MuiBox-root css-m507i9">
-								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">To model other critical
-									aspects of our system beyone the user interface, we created a swimlane diagram and a
-									state transition network. Each are briefly described and pictured below.
-
+								<p class="MuiTypography-root MuiTypography-body1 css-lj8hfv">After researching and
+									studying the different models and the
+									benefits they encompass, we decided to implement the State-Transition Diagram and an
+									ER (Entity-Relational) Diagram to model fundamentally crucial aspects of our
+									application.
 								</p>
 							</div>
 
-							<h3>Swimlane Diagram </h3>
-							<p>A swimlane diagram depicts ... It is useful for illustrating ... Below is an annotated
-								illustration of our swimlane diagram.
+							<h3>Entity-Relational Diagram</h3>
+							<p>The ER Diagram will allow us to model what our database should look like and how the
+								data should behave. ER Diagrams are useful in complex database systems as it allows
+								developers a high-level “Top-Down” view of their database. ER Diagrams contain different
+								symbols to represent the different types of data and relationships included in the
+								database. Rectangles represent different entities or tables, ovals are used to represent
+								the attributes of a table, and a diamond shape is for representing the relationships
+								between tables.
 							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
 								<div class="MuiBox-root css-1vp8jwk">
 
 									<div class="MuiBox-root css-1j8t7mm">
 										<div
 											class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
-											<center><img src="./images/PrototypeEvent.png"
-													style="max-height:400px;max-width:100%">
-												<img src="./images/eventSSDalton.png"
+											<center><img src="./images/er_model.png"
 													style="max-height:400px;max-width:100%">
 											</center>
 											<figcaption style="font-size: 14px;">
-												<center><em>Model 1. Swimlane Diagram</em></center>
+												<center><em>Model 1. ER Diagram</em></center>
 											</figcaption>
 
-											<p>Brief description of what swimlane diagram above shows... </p>
+											<p>We broke our data down into 6 different “entities”: User, Site, Review,
+												Event, Amenity, and Map. All of these entities have a unique primary key
+												specified by the underlined attribute and different relationships each
+												entity participates in, specified by the red diamond. Each entity also
+												includes attributes related to what those entities are representing. For
+												instance, the Map entity has a name, id, and an attribute that accepts
+												multiple data images. Allowing the one map overlay to have different
+												images stored. </p>
 
 										</div>
 									</div>
@@ -105,24 +116,41 @@
 							</div>
 
 							<h3>State Transition Diagram</h3>
-							<p>A state transition diagram depicts ... It is useful for illustrating ... Below is an
-								annotated illustration of our state transition diagram.
+							<p>The State-Transition Diagram will help our team and relevant
+								stakeholders visualize and manage the behavior of our vast array of screens.The
+								transitions of our system are transitions between screens, system
+								functions like adding a review to a site, toggling the map filters, or
+								bookmarking a site, and basic operations like logging in, or signing
+								out.
 							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
 								<div class="MuiBox-root css-1vp8jwk">
 
 									<div class="MuiBox-root css-1j8t7mm">
 										<div
 											class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
-											<center><img src="./images/PrototypeEvent.png"
+											<center>
+												<img src="./images/state_transition1.png"
 													style="max-height:400px;max-width:100%">
-												<img src="./images/eventSSDalton.png"
+												<img src="./images/state_transition.png"
 													style="max-height:400px;max-width:100%">
 											</center>
 											<figcaption style="font-size: 14px;">
 												<center><em>Model 2. State Transition Diagram</em></center>
 											</figcaption>
 
-											<p>Brief description of what state transition diagram above shows... </p>
+											<p>
+												This State Network Diagram shows
+												the navigational flow from each screen to the others. Our Map section is
+												the most connected area of the diagram. This is because the map screen
+												is intended to be our “Wow” Factor.
+												We chose to include the state transition model for our project because
+												with the large number of states our system will go through, as seen in
+												our proposed use cases from our Low-Fidelity Prototype, laying out the
+												flow and observing the different states on the diagram can help us to
+												improve the flow of our system so it can be more intuitive for a user
+												and also allow us to see any missing functionalities or redundancies
+												that can be removed from our system.
+											</p>
 
 										</div>
 									</div>
