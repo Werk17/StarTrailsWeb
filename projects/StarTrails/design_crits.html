@@ -30,6 +30,8 @@
 				<a href="./systems_modeling.html">Systems Modeling</a>
 				<a href="./prototype.html">High-fidelity Prototype</a>
 				<a href="./design_crits.html">Design Crits</a>
+				<a href="./implementation.html">Implementation</a>
+				<a href="./ui_testing.html">UI Testing</a>
 			</div>
 
 			<header id="top"
@@ -77,53 +79,98 @@
 								</p>
 							</div>
 
-							<p>Once we had a stable high-fidelity prototype, we wanted to observe how other students in
-								our class (and potential end users of our app) would perform a set of common tasks using
-								our prototoype. In particular, we wanted to learn where they had questions, problems,
-								and concerns with our design. Below is the set of scenarios/tasks that we provided to
-								our classmates during this high-fidelity design crit session. This is followed by some
-								of the most important feedback we gathered and a discussion of how it will impact our
-								future design iterations.
+							<p>After developing a reliable and detailed prototype, our objective was to assess the
+								performance of fellow classmates and potential end users of our application as they
+								engaged in various standard tasks using our prototype. Our focus was on identifying
+								areas where they encountered questions, issues, or concerns with our design. Presented
+								below are the scenarios and tasks we presented to our classmates during the
+								high-fidelity design critique session, along with key feedback collected and a
+								discussion on how it will shape our upcoming design iterations.
 							</p>
 
 							<h2>Scenario 1</h2>
 
-							<p>After considering .... </p>
+							<p>You have decided to take a trip to eastern montana to go stargazing. You heard of a new
+								recreation app on the market called StarTrails. You decide to download the app in hopes
+								of finding a quiet and remote campground with minimal light pollution to view the stars.
+								You also wish to know if there are any expected meteor showers or northern lights and
+								what restaurants are nearby so you have a place to stop and grab breakfast on the way
+								home. </p>
 							<h4>Tasks:</h4>
 							<ol>
-								<li>task 1 ...</li>
-								<li>task 2 ...</li>
-								<li>task 3 ...</li>
-								<li>task 4 ...</li>
+								<li>Login
+									<br> a. Register a new account (UF.P.1)
+									<br> b. Change your profile picture (UF.P.3)
+								</li>
+								<li>Access the light pollution map
+									<br> a. Find a site in a remote area with minimal light pollution (UF.D.8)(UF.D.1)
+									<br> b. Favorite the site for later viewing (UF.F.3)
+								</li>
+								<li>Access the Celestial Events Calendar
+									<br> a. Find if there are any meteor showers during the time of your visit (UF.D.14)
+									<br> b. Find if there are any expected northern lights viewing (UF.D.15)
+									<br> c. Check the KP index (northern lights magnitude) of the earth (UF.D.7)
+									<br> d. Set a notification reminder (UF.S.1)
+								</li>
+								<li>View favorited sites
+									<br> a. Find your most recent favorited camp spot (UF.P.3)
+									<br> b. Check if the site offers camping (UF.D.4)
+									<br> c. Find a nearby campground to lodge at (UF.D.11)
+									<br> d. Find a nearby restaurant you can visit in the morning (UF.D.10)
+								</li>
+								<li>Share feedback on the site
+									<br> a. Leave a review for the site (UF.C.1)
+								</li>
 							</ol>
 							<br>
 
 							<h2>Scenario 2</h2>
 
-							<p>After considering .... </p>
+							<p>After staying at a campsite you realize that some of the information on your new favorite
+								app about the site is either incorrect or out of date. To resolve this, you decide to
+								leave comments with some information on your review of the site.</p>
 							<h4>Tasks:</h4>
 							<ol>
-								<li>task 1 ...</li>
-								<li>task 2 ...</li>
-								<li>task 3 ...</li>
-								<li>task 4 ...</li>
+								<li>Sign In
+									<br> a. Enter username and password into login screen and verify existence and
+									correctness of inputs (UF.P.2)
+								</li>
+								<li>Navigate to Site on app
+									<br> a. Either pull up site from list (UF.F.1)
+									<br> b. or navigate to site on interactive map(UF.M.1)
+								</li>
+								<li>Leave a review on the site
+									<br> a. Fill out review and leave info in comment (UF.C.1)
+									<br> b. Verify review posted and see if other reviews have left similar info(UF.D.2)
+								</li>
 							</ol>
 
 
-							<h2>Summary of feedback from in-class Design Crits</h2>
+							<h2>Summary of Feedback from In-Class Design Crits</h2>
 
 							<p>Below is a list of the most common feedback we received during our design crit session
 								using our high-fidelity prototype. </p>
 							<ul>
-								<li>task 1 ...</li>
-								<li>task 2 ...</li>
-								<li>task 3 ...</li>
-								<li>task 4 ...</li>
+								<li>Bottom navigation buttons are too large</li>
+								<li>Switch the home page with the compass (discovery) page and move the discovery page
+									to the home page</li>
+								<li>Place the KP index description before the KP index forecast to clear up confusion
+									for non-astronomy users</li>
+								<li>Replace the stars on the map with pins</li>
+								<li>Increase the font size on the KP index description for more quality user
+									friendliness </li>
+								<li>Add a key to the map so the user knows which overlay they currently have toggled
+								</li>
+								<li>Aurora Borealis button may be confusing to non-astronomy users so change the button
+									content to Northern Lights for clarity </li>
+								<li>Create uniformity by having a uniform favorited sites icon rather than a bookmarked
+									and favorited sites </li>
 							</ul>
 
-							To illustrate how this feedback will impact future iterations of our design, we include a
-							couple of annotated screen shots illustrating the problem, alongside a description of how we
-							plan to resolve that particular issue going forward.
+							To demonstrate the influence of this feedback on subsequent design iterations, we have
+							incorporated annotated screen shots highlighting the identified issues. Some issues we
+							resolved right away and described the changes we made while other issues we accompanied with
+							an explanation of our planned resolution for each specific problem in our future endeavors.
 
 							<div class="MuiGrid-root MuiGrid-item MuiGrid-grid-md-6 css-gp0h3g">
 								<div class="MuiBox-root css-1vp8jwk">
@@ -131,16 +178,28 @@
 									<div class="MuiBox-root css-1j8t7mm">
 										<div
 											class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lnqg4h">
-											<center><img src="./images/PrototypeEvent.png"
+											<center><img src="./images/crit1.png"
 													style="max-height:400px;max-width:100%">
-												<img src="./images/eventSSDalton.png"
-													style="max-height:400px;max-width:100%">
+												<figcaption style="font-size: 14px;">
+													<center><em>Annotated Discovery and Site View Screens</em></center>
+												</figcaption>
+												<img src="./images/crit3.png" style="max-height:400px;max-width:100%">
 											</center>
 											<figcaption style="font-size: 14px;">
-												<center><em>Screen y</em></center>
+												<center><em>Annotated Home and Profile Screens</em></center>
 											</figcaption>
 
-											<p>Brief description of what screen y above shows... </p>
+											<p>The screens above cover the majority of important feedback we gathered
+												from our high-fidelity prototype design crits. Our group immediately
+												implemented a few important changes such as changing our navigation
+												button sizes and switching our bookmarked sites buttons with a favorite
+												button. Our group left out some feedback but described the changes in
+												the above picture. Going forward to implementation we plan to
+												incorporate as many, if not all of our feedback we gathered from our
+												design crits session. Overall, the feedback we were given will be
+												crucial for our interface design going forward. We strive to give our
+												app a user-friendly look and feel while also creating and utilizing all
+												of our core functionality we described in our Reqs Spec session.</p>
 
 										</div>
 									</div>
